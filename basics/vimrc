@@ -1,0 +1,39 @@
+nmap <C-V> "+gP
+imap <C-V> <ESC><C-V>i
+vmap <C-C> "+y 
+
+
+syntax on
+filetype plugin indent on
+
+" Load bundles plugin automatically
+execute pathogen#infect()
+
+
+"vim-go maps
+au FileType go nmap <F5> <Plug>(go-run)
+
+
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
+au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+
+
+" Enable autocompletion
+set omnifunc=syntaxcomplete#Complete
+" Select keyword as you type
+set completeopt=longest,menuone
+
+hi CursorLine   cterm=NONE ctermbg=darkgray ctermfg=white
+set cursorline
+
+" tab navigation like firefox
+nnoremap <C-right> :tabprevious<CR>
+nnoremap <C-left>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+noremap  <C-tab>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+
+" mouse
+set mouse=a
