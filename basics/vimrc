@@ -1,7 +1,3 @@
-nmap <C-V> "+gP
-imap <C-V> <ESC><C-V>i
-vmap <C-C> "+y 
-
 
 syntax on
 filetype plugin indent on
@@ -14,9 +10,9 @@ execute pathogen#infect()
 au FileType go nmap <F5> <Plug>(go-run)
 
 
-au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
-au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
-au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
+"au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+"au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
+"au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
 
 
 " Enable autocompletion
@@ -37,3 +33,12 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 " mouse
 set mouse=a
+
+
+" Gvim
+set guifont=Inconsolata\ Medium\ 14
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+
