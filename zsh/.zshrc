@@ -82,3 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Instalacao das Funcoes ZZ (www.funcoeszz.net)
+export ZZPATH=/home/breno/github/basics/bin/funcoeszz-15.5.sh
+source /home/breno/.zzzshrc

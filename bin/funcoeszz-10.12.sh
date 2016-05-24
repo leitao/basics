@@ -1,1 +1,0 @@
-/home/breno/bin/funcoeszz-10.12.sh
