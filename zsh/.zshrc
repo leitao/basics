@@ -5,7 +5,8 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="breno"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="breno" 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +54,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+  export PATH="/opt/libreoffice5.0/program/:/opt/libreoffice5.0/program/:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/breno/.local/bin:/home/breno/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -82,7 +83,21 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#source ~/.bashrc
+
+PATH=/opt/libreoffice5.0/program/:$PATH
+alias d='/home/breno/bin/funcoeszz-15.5.sh dicbabylon $*'
+alias cscope='cscope -d -k -p3'
+HISTSIZE=100000
+alias gw='ssh gateway'
+alias poc1='ssh brenohl@poc1.ltc.br.ibm.com'
+alias sid='ssh brenohl@sid.ltc.br.ibm.com'
+alias pub='ssh brenohl@pub.ltc.br.ibm.com'
+alias deb1='ssh brenohl@deb1'
+alias ubu1='ssh brenohl@ubu1.ltc.br.ibm.com'
+alias bifrost='ssh brenohl@bifrost'
 
 # Instalacao das Funcoes ZZ (www.funcoeszz.net)
-export ZZPATH=/home/breno/github/basics/bin/funcoeszz-15.5.sh
-source /home/breno/.zzzshrc
+export ZZOFF=""  # desligue funcoes indesejadas
+
