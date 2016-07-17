@@ -1,0 +1,10 @@
+# this is the best sorting algorithm
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+
+## receiving mail
+# needs to be consistent with offlineimap!
+set mbox_type = Maildir
+set folder = ~/Mail/ibm
+# folder in which to start mutt
+set spoolfile = +INBOX

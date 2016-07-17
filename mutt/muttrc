@@ -1,0 +1,41 @@
+# General configuration
+
+# Basic config, you can leave this as is
+set move = no
+set include
+set sort = 'threads'
+set sort_aux = 'reverse-last-date-received'
+set auto_tag = yes
+ignore "Authentication-Results:"
+ignore "DomainKey-Signature:"
+ignore "DKIM-Signature:"
+hdr_order Date From To Cc
+alternative_order text/plain text/html *
+auto_view text/html
+
+# Editor
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind editor <space> noop
+set editor=vim
+
+# Make it fast
+set fast_reply=yes
+set include=yes
+set wait_key=no
+set confirmappend=no
+
+#Colors
+source ~/.mutt/google
+
+# Parse and jump to URL
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+
+# different imap accounts
+macro index <f2> '<sync-mailbox><enter-command>source ~/.mutt/google<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.mutt/ibm<enter><change-folder>!<enter>'
+
+#gmail is my primary account
+source ~/.mutt/colors.linux
+set certificate_file=~/.mutt-certs

@@ -1,0 +1,29 @@
+#google messages
+set message_cachedir=~/.mutt/cache/google/messages
+set header_cache=~/.mutt/cache/google/headers
+set message_cachedir=~/.mutt/cache/google/bodies
+set certificate_file=~/.mutt/google/certificates
+
+set imap_user = "breno.leitao@gmail.com"
+set smtp_url = "smtp://breno.leitao@smtp.gmail.com:587/"
+set from = "breno.leitao@gmail.com"
+set realname = "Breno Leitao"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+Drafts"
+set record = "+Sent Mail"
+set trash = '+[Google Mail]/Trash'
+
+set crypt_replyencrypt=yes
+set crypt_autosign=yes
+
+set query_command="goobook query '%s'"
+
+macro index,pager A "<save-message>=[Gmail]/All Mail<enter>" "Archive Message"

@@ -1,0 +1,38 @@
+[general]
+accounts = gmail_user, ibm
+ui = ttyui
+socktimeout = 30
+
+[Account gmail_user]
+localrepository = local-gmail_user
+remoterepository = remote-gmail_user
+
+[Repository local-gmail_user]
+type = Maildir
+localfolders = ~/Mail/gmail
+
+[Repository remote-gmail_user]
+type = Gmail
+remoteuser = breno.leitao@gmail.com
+remotepass = X
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+folderfilter = lambda folder: folder in ['INBOX']
+
+
+## IBM account ##
+
+[Account ibm]
+localrepository = local-ibm
+remoterepository = remote-ibm
+
+[Repository local-ibm]
+type = Maildir
+localfolders = ~/Mail/ibm
+
+[Repository remote-ibm]
+type = IMAP
+remotehost = imap.linux.ibm.com
+remoteuser = leitao
+remotepass = X
+sslcacertfile = /etc/ssl/certs/ibm3.crt
+folderfilter = lambda folder: folder in ['INBOX']

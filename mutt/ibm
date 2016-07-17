@@ -1,0 +1,26 @@
+#ibm messages
+set message_cachedir=~/.mutt/cache/ibm/messages
+set header_cache=~/.mutt/cache/ibm/headers
+set message_cachedir=~/.mutt/cache/ibm/bodies
+set certificate_file=~/.mutt/ibm/certificates
+
+
+# user
+set imap_user = "leitao"
+set smtp_url = "smtp://na.relay.ibm.com"
+set from = "brenohl@br.ibm.com"
+set realname = "Breno Leitao"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.linux.ibm.com:993"
+set spoolfile = "+Inbox"
+set imap_check_subscribed
+set hostname = br.ibm.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+Drafts"
+set record = "+Sent"
+
+set crypt_replyencrypt=no
+set crypt_autosign=no
