@@ -1,0 +1,30 @@
+#debian messages
+set message_cachedir=~/.mutt/cache/debian/messages
+set header_cache=~/.mutt/cache/debian/headers
+set message_cachedir=~/.mutt/cache/debian/bodies
+set certificate_file=~/.mutt/cache/debian/certificates
+
+set imap_user = "breno.debian@gmail.com"
+set imap_pass = ""
+set smtp_url = "smtp://breno.debian@smtp.gmail.com:587/"
+set smtp_pass = ""
+set from = "leitao@debian.org"
+set realname = "Breno Leitao"
+
+# Basic config, you can leave this as is
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set imap_check_subscribed
+set hostname = gmail.com
+set mail_check = 120
+set timeout = 300
+set imap_keepalive = 300
+set postponed = "+Drafts"
+set record = "+Sent Mail"
+
+set crypt_replyencrypt=yes
+set crypt_autosign=yes
+
+set query_command="goobook query '%s'"
+
+macro index,pager A "<save-message>=[Gmail]/All Mail<enter>" "Archive Message"
