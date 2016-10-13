@@ -9,7 +9,7 @@ apt-get install rsync git zsh cmus mutt abook openssh-server vim qemu qemu-kvm v
 
 ## git
 git config --global user.name "Breno Leitao"
-git config --global user.email brenohl@br.ibm.com
+git config --global user.email breno.leitao@gmail.com
 git config --global core.editor vim
 git config --global --add gitreview.username "leitao"
 git config --global credential.helper cache
