@@ -12,3 +12,4 @@ git config --global user.name "Breno Leitao"
 git config --global user.email brenohl@br.ibm.com
 git config --global core.editor vim
 git config --global --add gitreview.username "leitao"
+git config --global credential.helper cache
