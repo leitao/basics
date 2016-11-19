@@ -3,7 +3,7 @@
 
 sudo cp apt/* /etc/apt/apt.conf.d/
 
-apt-get install rsync git zsh cmus mutt abook openssh-server vim qemu qemu-kvm virtinst youtube-dl vim-syntastic iotop nethogs urlscan urlscan terminator fonts-liberation dpkg-dev curl vlc
+apt-get install rsync git zsh cmus mutt abook openssh-server vim qemu qemu-kvm virtinst youtube-dl vim-syntastic iotop nethogs urlscan urlscan terminator fonts-liberation dpkg-dev curl vlc lynx command-not-found unrar-free
 
 ## git
 git config --global user.name "Breno Leitao"
