@@ -5,18 +5,16 @@ filetype plugin indent on
 "vim-go maps
 au FileType go nmap <F5> <Plug>(go-run)
 
-
 "au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
 "au Filetype go nnoremap <leader>s :sp <CR>:exe "GoDef"<CR>
 "au Filetype go nnoremap <leader>t :tab split <CR>:exe "GoDef"<CR>
-
 
 " Enable autocompletion
 set omnifunc=syntaxcomplete#Complete
 " Select keyword as you type
 set completeopt=longest,menuone
 
-hi CursorLine   cterm=NONE ctermbg=darkgray ctermfg=white
+hi CursorLine   cterm=NONE ctermbg=darkgray
 set cursorline
 
 " tab navigation like firefox
@@ -29,7 +27,6 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 " mouse
 set mouse=a
-
 
 " Gvim
 set guifont=Inconsolata\ Medium\ 14
